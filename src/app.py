@@ -93,12 +93,11 @@ def consultar3tablas():
     i=0
     for employee,department,company  in resultado:
         i+=1
-        datos={
-            i:{
+        datos[i]={
+           
                 'Ename': employee.name,
                 'Dname': department.name,
-                'Cname': company.name
-            }
+                'Cname': company.name          
         }
     print(datos)
     return "Algo"
